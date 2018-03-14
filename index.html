@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Eco-crear</title>
+        <style>
+            #mitam{
+                width: 80% !important;
+            }
+        </style>
         <link rel="shortcut icon" href="img/ecocrear.png"/>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
@@ -19,8 +24,7 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">        
         <!-- Main Stylesheet File -->
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -42,8 +46,19 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="#intro">Inicio</a></li>
-                        <li><a href="#about">¿Quienes somos?</a></li>
-                        <li><a href="#services">Servicios</a></li>
+                        <li class="menu-has-children"><a href="#services">Servicios</a>
+                            <ul>
+                                <li><a href="#services">Venta y renta de apartamentos</a></li>
+                                <li><a href="#services">Artes y manualidades</a></li>
+                                <li><a href="#services">Páginas web y bases de datos MYSQL</a></li>
+                                <li><a href="#services">Seguridad GPS para vehiculo y moto</a></li>
+                                <li><a href="#services">Cértificacion a las empresas de la ley 1072 de 2015</a></li>
+                                <li><a href="#services">Talléres de educacion financiera y finanzas en el hogar</a></li>
+                                <li><a href="#services">Arquitectura e ingenieria</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about">¿Quienes somos?</a></li>                        
+                        <!--<li><a href="#services">Servicios</a></li>-->
                         <li><a href="#portfolio">Galeria</a></li>                        
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
@@ -214,56 +229,217 @@
                     <div class="row">
 
                         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-                            <div class="icon"><i class="ion-android-home"></i></div>
-                            <h4 class="title"><a>Venta y renta de Apartamentos</a></h4>
+                            <div class="icon"><i class="ion-ios-home"></i></div>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal1">Venta y renta de Apartamentos</a></h4>
                             <p class="description"></p>
+                            <div id="myModal1" class="modal fade" role="dialog">
+                                <div class="modal-dialog" id="mitam">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Venta y renta de apartamentos</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                Se trata de un proyecto de una subdivisión de una propiedad de tres pisos (propiedad horizontal) ubicada en el barrio
+                                                Villa Sonia sector II. Por su ubicación se adecua para uso mixto, es decir, residencial y comercial. Se encuentra en una zona de desarrollo
+                                                comercial cerca de vías principales como la Avenida Ciudad de Cali y próxima Avenida 1 de Mayo. Es la oportunidad de invertir en 
+                                                esta zona de gran valorización adicional y si lo requiere lo puede cancelar financiado hasta en un 70%del valor del inmueble a un plazo
+                                                máximo de 15 años. <b>Precio: $ 99.750.000</b> Realice su propuesta para pago de contado. 
+                                            </p>
+                                            <p>
+                                                Para más información diríjase a la zona de galeria en la web para visualizar el inmueble con mas profundidad.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-                            <div class="icon"><i class="ion-android-create"></i></div>
-                            <h4 class="title"><a>Artes y manualidades</a></h4>
+                            <div class="icon"><i class="ion-android-color-palette"></i></div>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal2">Artes y manualidades</a></h4>
                             <p class="description"></p>
+                            <div id="myModal2" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Artes y manualidades</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                Creación de todo tipo de artes y manualidades para decorar tu hogar o para tu gusto personal.
+                                            </p>
+                                            <p align="justify">
+                                                Se realízan: <br><br>
+                                                - Pedreria <br>
+                                                - Cuadros en porcelanicron <br>
+                                                - Borbados en cinta e hilos <br>
+                                                - Bolsos <br>
+                                                - Tejido en macramé <br>
+                                                - Puntada española <br>
+                                                - Cascadas para decoración del hogar (grandes, medianas o pequeñas) <br>
+                                            </p>
+                                            <p align="Justify">
+                                                Para más información por favor contactar a los números registrados en la página o envie un correo a <b>gerencia@eco-crear.com</b> con el servicio al que este interesado.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
                             <div class="icon"><i class="ion-android-laptop"></i></div>
-                            <h4 class="title"><a>Páginas web y bases de datos</a></h4>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal3">Páginas web y bases de datos MYSQL</a></h4>
                             <p class="description"></p>
+                            <div id="myModal3" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Páginas web y MYSQL</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                Creación de todo tipo de páginas webs (dinamicas o estaticas) para negocio independiente o micro-empresa.
+                                            </p>
+                                            <p align="justify">
+                                                <b>Páginas estáticas: </b> son básicamente informativas y están enfocadas principalmente a mostrar una información permanente, donde el navegante se limita a obtener dicha 
+                                                información sin poder interactuar con la página visitada. En las páginas web estáticas no se utilizan bases de datos ni se requiere programación.
+                                            </p>
+                                            <p align="justify">
+                                                <b>Páginas dinámicas: </b>son aquellas en las que la información presentada se genera a partir de una petición del usuario de la página.
+                                                Los lenguajes utilizados para la generación de este tipo de páginas son principalmente: Perl CGI, PHP , JSP y ASP.
+                                            </p>
+                                            <p align="justify">
+                                                Contamos con plataformas de bases de datos como <b> phpmyadmin, MySql Workbench, MySql Front</b> <br><br>                                                
+                                                - Dominios .com .net .org .tk .xyz <br>
+                                                - Correos corporativos.
+                                            </p>
+                                            <p align="justify">
+                                                Para más información acerca de nuestros planes de hosting para un espacio ilimitado de tu página web envianos un correo a <b>gerencia@eco-crear.com</b>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                            <div class="icon"><i class="ion-android-warning"></i></div>
-                            <h4 class="title"><a>Seguridad GPS para vehiculo y moto</a></h4>
-                            <p class="description">Instalación de dispositivo electronico para la protección de su vehiculo o moto.</p>
+                            <div class="icon"><i class="ion-model-s"></i></div>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal4">Seguridad GPS para vehiculo y moto</a></h4>
+                            <p class="description"></p>
+                            <div id="myModal4" class="modal fade" role="dialog">
+                                <div class="modal-dialog" id="mitam">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Seguridad GPS para tu vehiculo y moto</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                Instalación de dispositivo electronico para la protección de su vehiculo o moto.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                             <div class="icon"><i class="ion-android-bookmark"></i></div>
-                            <h4 class="title"><a>Certificación a las empresas de la ley 1072 de 2015</a></h4>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal5">Certificación a las empresas de la ley 1072 de 2015</a></h4>
                             <p class="description"></p>
+                            <div id="myModal5" class="modal fade" role="dialog">
+                                <div class="modal-dialog" id="mitam">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Certificación a las empresas de la ley 1072 de 2015</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                Según lo establecido por el Ministerio de Trabajo Colombiano, tras la creciente necesidad de trabajar para minimizar los riesgos laborales, se ha puesto sobre la mesa el 
+                                                decreto 1072 del 2015, donde refleja la obligatoriedad que todo tipo de empresa colombiana sin excepción debe implementar un sistema SG-SST.
+                                                La implementación del SG-SST debe ser liderada e implementada por el empleador. Con nuestra asesoria lograremos que la empresa logre la aplicación de 
+                                                las medidas de prevención y control eficaz de los peligros y riesgos en el lugar de trabajo, reduciendo al mínimo los incidentes, accidentes y enfermedades laborales que se 
+                                                puedan presentar.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                            <div class="icon"><i class="ion-compose"></i></div>
-                            <h4 class="title"><a>Talleres de educación financiera y finanzas en el hogar</a></h4>
+                            <div class="icon"><i class="ion-university"></i></div>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal6">Talleres de educación financiera y finanzas en el hogar</a></h4>
                             <p class="description"></p>
+                            <div id="myModal6" class="modal fade" role="dialog">
+                                <div class="modal-dialog" id="mitam">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Talleres de educación financiera y finanzas en el hogar</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                Brindamos asesorias y apoyo en el sector financiero con el fin de lograr el manejo adecuado de sus finanzas personales y en el hogar. <br><br>
+
+                                                - Finanzas para Emprendedores <br>
+                                                - ¿Cómo salir del círculo deudas-no ahorro?<br>
+                                                - Interpretación de estados financieros<br>
+                                                - Saber invertir<br>
+                                                - Como empezar tu propia empresa<br>
+                                                - Aprender a elaborar un presupuesto<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-12 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                            <div class="icon"><i class="ion-compose"></i></div>
-                            <h4 class="title"><a><b>Desarrollo en Ingenieria</b></a></h4>
-                            <p class="description">
-                                - Diseño estructural
-                            </p>
-                            <p class="description">
-                                - Licencias de construcción
-                            </p>
-                            <p class="description">
-                                - Gerencia y construcción de obras
-                            </p>
-                            <p class="description">
-                                - Arquitectura bioclimática
-                            </p>
-                            <p class="description">
-                                - Estudio de suelos
-                            </p>
-                            <p class="description">
-                                - Topografía
-                            </p>
+                        <div class="col-lg-12 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                            <div class="icon"><img src="img/ingenieria.png" width="35px"></div>
+                            <h4 class="title"><a onMouseOver="mano(this)" title="Ver descripción" data-toggle="modal" data-target="#myModal7"><b>Arquitectura e Ingenieria</b></a></h4>
+                            <p class="description"></p>
+                            <div id="myModal7" class="modal fade" role="dialog">
+                                <div class="modal-dialog" id="mitam">
+                                    <div class="modal-content">
+                                        <div class="modal-header">                                            
+                                            <h4 class="modal-title" id="myModalLabel"><b>Arquitectura e Ingenieria</b></h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p align="justify">
+                                                - Diseño estructural<br>
+                                                - Licencias de construcción<br>
+                                                - Gerencia y construcción de obras<br>
+                                                - Arquitectura bioclimática<br>
+                                                - Estudio de suelos<br>
+                                                - Topografía<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -365,7 +541,7 @@
                                 </figure>
 
                                 <div class="portfolio-info">
-                                        <h4><a>Pedreria</a></h4>
+                                    <h4><a>Pedreria</a></h4>
                                     <p>ALGUNAS MUESTRAS DE ARTES Y MANUALIDADES</p>
                                 </div>
                             </div>
@@ -379,7 +555,7 @@
                                 </figure>
 
                                 <div class="portfolio-info">
-                                        <h4><a>Juego de baño</a></h4>
+                                    <h4><a>Juego de baño</a></h4>
                                     <p>ALGUNAS MUESTRAS DE ARTES Y MANUALIDADES</p>
                                 </div>
                             </div>
@@ -393,7 +569,7 @@
                                 </figure>
 
                                 <div class="portfolio-info">
-                                        <h4><a>Bolsos y cojines</a></h4>
+                                    <h4><a>Bolsos y cojines</a></h4>
                                     <p>ALGUNAS MUESTRAS DE ARTES Y MANUALIDADES</p>
                                 </div>
                             </div>
@@ -521,6 +697,16 @@
                     </div>
                 </div>
             </footer><!-- #footer -->
+
+                        <script>
+                                function mano(a) {
+                                    if (navigator.appName == "Netscape") {
+                                        a.style.cursor = 'pointer';
+                                    } else {
+                                        a.style.cursor = 'hand';
+                                    }
+                                }
+                        </script>
 
                         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
