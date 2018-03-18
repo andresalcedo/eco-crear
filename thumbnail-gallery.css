@@ -1,11 +1,12 @@
 body {
+    background: "images/gris.jpg";
     min-height: 100vh;
     font: normal 16px sans-serif;
 }
 
 h2 {
     text-align: center;
-    color: black;
+    color: whitesmoke;
 }
 
 .gallery-container h1 {
